@@ -1,2 +1,1 @@
-# brainwave-Intern
-Brainwaves Matrix Solutions Web Developement Internship
+Simple Blogging Website
