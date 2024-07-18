@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4B0082; /* Dark Violet */
+    color: #a3f394; /* White text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #8A2BE2; /* Blue Violet */
+}
+
+section {
+    padding: 50px 0;
+}
+
+.half {
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    text-align: center;
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    font-size: 75px; /* Increased font size */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #FFD700; /* Gold */
+}
+
+.quote p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section#login {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+}
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #663399; /* Rebecca Purple */
+    border-radius: 10px;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.login-form button {
+    width: 100%;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    background-color: #800080; /* Purple */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #BA55D3; /* Medium Orchid */
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-link a {
+    color: #FFD700; /* Gold */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+a {
+    color: #FFFFFF; /* White text for all links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+/* Increase the size of the image in the home section */
+.home-image {
+    width: 80%; /* Adjust the width as needed */
+    max-width: 500px; /* Optional: set a max width */
+    height: auto;
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Responsive Design (optional) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+    header nav ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    .half {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+        text-align: center;
+    }
+    .home-image {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Specific styling for the Read More link */
+#blogs a {
+    color: #FFFFFF; /* White text for Read More link */
+    text-decoration: none;
+}
+
+#blogs a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}

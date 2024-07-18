@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogging Website</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><i>Just Blogs</i></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="half">
+                <div class="left quote">
+                    <p><b><i>Blogging is another Wikipedia for Knowledge; Dive In to Experience it!</i></b></p>
+                </div>
+                <div class="right">
+                    <img src="Images/blog1.png" alt="Blogging Image" class="home-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blogs">
+        <div class="container">
+            <h2>Recent Blogs</h2>
+            <div class="blog-posts">
+                <!-- Blog posts will be dynamically added here with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="login">
+        <div class="container">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="register-link">
+                    <p>Not registered? <a href="register.html">Register here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Just Blogs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="code.js"></script>
+
+    <script>
+        function displayBlogPosts() {
+            let blogPostsContainer = document.querySelector('#blogs .blog-posts');
+            blogPostsContainer.innerHTML = '';
+            let blogPosts = JSON.parse(localStorage.getItem('blogPosts')) || [];
+            blogPosts.forEach(function(blogPost) {
+                let blogPostElement = document.createElement('div');
+                blogPostElement.classList.add('blog-post');
+                blogPostElement.innerHTML = `
+                    <h3>${blogPost.title}</h3>
+                    <p><strong>Author:</strong> ${blogPost.author}</p>
+                    <p>${blogPost.content}</p>
+                `;
+                blogPostsContainer.appendChild(blogPostElement);
+            });
+        }
+        if (window.location.href.includes('index.html') && document.getElementById('blogs')) {
+            displayBlogPosts();
+        }
+
+    </script>
+
+</body>
+</html>

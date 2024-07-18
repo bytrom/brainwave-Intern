@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><i>Just Blogs</i></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="index.html#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="register">
+        <div class="container">
+            <div class="register-form">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+                <div id="registrationMessage" style="display: none;">
+                    <p>Registration successful! Please proceed to <a href="index.html#login">login</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Just Blogs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="register.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4B0082; /* Dark Violet */
+    color: #FFFFFF; /* White text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: #FFFFFF; /* White text */
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #8A2BE2; /* Blue Violet */
+}
+
+/* Main Section Styles */
+section {
+    padding: 50px 0;
+}
+
+/* Write Blog Form Styles */
+.write-blog-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2F4F4F;
+    border-radius: 10px;
+}
+
+.write-blog-form h2 {
+    text-align: center;
+    color: #FFFFFF; /* White text */
+    margin-bottom: 20px;
+}
+
+.write-blog-form input[type="text"],
+.write-blog-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #FFFFFF; /* White background */
+    color: #4B0082; /* Dark Violet text */
+}
+
+.write-blog-form textarea {
+    height: 200px; /* Adjust as needed */
+}
+
+.write-blog-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #800080; /* Purple */
+    color: #FFFFFF; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.write-blog-form button:hover {
+    background-color: #BA55D3; /* Medium Orchid */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    color: #FFFFFF; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

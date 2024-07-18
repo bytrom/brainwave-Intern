@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Blog</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><i>Just Blogs</i></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="index.html#login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="write-blog">
+        <div class="container">
+            <div class="write-blog-form">
+                <h2>Write Blog</h2>
+                <form id="writeBlogForm">
+                    <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="author" placeholder="Author Name" required>
+                    <textarea id="content" placeholder="Write your blog content..." required></textarea>
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Just Blogs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="upload.js"></script>
+</body>
+</html>
